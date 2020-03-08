@@ -1,0 +1,16 @@
+
+body{
+
+};
+h1{
+
+};
+
+.EightBall {
+height: 150px;
+width: 150px;    
+background-color: white;
+border-radius: 50%;
+box-shadow: 0 0 0 100px black;
+text-align:center;
+};

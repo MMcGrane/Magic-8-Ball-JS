@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<link rel="stylesheet" href="8Ball.css">
+<h1>Witnesss The Magic 8 Ball!</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="EightBall">
+<br><br><h1>8</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<input type="text" id="Livinginabox">
+<br>
+<button id="buttons">Ask</button>
+
+<p id="asked"></p>
+<p id="answer"></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var responses=["Ask again later", "Better not tell you now", "Cannot predict now", 
+"Concentrate and ask again", "My reply is no", "Yes", "No", "Without a doubt", 
+"The stars say no", "The stars say yes", "Very doubtful", "Signs point to yes",
+"You may rely on it"];
+
+$(function() {
+$("button").click(function() {
+$("#answer").text(responses[Math.floor(Math.random() * responses.length)]);
+});
+});
+
+</script>
+
+
+</body>
+</html>
